@@ -1,4 +1,5 @@
-﻿using System;
+﻿using PracticeSession;
+using System;
 
 namespace Practice
 {
@@ -12,7 +13,7 @@ namespace Practice
             {
                 Console.WriteLine(" \n \n Practice Session");
                 Console.WriteLine("Press The Below Options");
-                Console.WriteLine(" 1.Alphabet \n  2.Exit");
+                Console.WriteLine(" 1.Alphabet \n 2.Ascii \n 3.Exit");
                 int check = Convert.ToInt32(Console.ReadLine());
                 switch (check)
                 {
@@ -20,8 +21,12 @@ namespace Practice
                         Alphabet alphabets = new Alphabet();
                         alphabets.Aplhabets();
                         break;
-
                     case 2:
+                        Ascii ascii = new Ascii();
+                        ascii.Asci();
+                        break;
+
+                    case 3:
                         flag = false;
                         break;
                 }
